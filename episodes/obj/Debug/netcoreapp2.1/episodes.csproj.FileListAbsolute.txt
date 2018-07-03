@@ -1,0 +1,11 @@
+/home/ukasz/episodes/bin/Debug/netcoreapp2.1/episodes.deps.json
+/home/ukasz/episodes/bin/Debug/netcoreapp2.1/episodes.runtimeconfig.json
+/home/ukasz/episodes/bin/Debug/netcoreapp2.1/episodes.runtimeconfig.dev.json
+/home/ukasz/episodes/bin/Debug/netcoreapp2.1/episodes.dll
+/home/ukasz/episodes/bin/Debug/netcoreapp2.1/episodes.pdb
+/home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.csprojAssemblyReference.cache
+/home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.csproj.CoreCompileInputs.cache
+/home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.AssemblyInfoInputs.cache
+/home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.AssemblyInfo.cs
+/home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.dll
+/home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.pdb
