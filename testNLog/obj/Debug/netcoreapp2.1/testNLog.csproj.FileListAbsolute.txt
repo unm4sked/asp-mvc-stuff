@@ -1,0 +1,6 @@
+/home/ukasz/aspStuff/testNLog/obj/Debug/netcoreapp2.1/testNLog.csprojAssemblyReference.cache
+/home/ukasz/aspStuff/testNLog/obj/Debug/netcoreapp2.1/testNLog.csproj.CoreCompileInputs.cache
+/home/ukasz/aspStuff/testNLog/obj/Debug/netcoreapp2.1/testNLog.RazorAssemblyInfo.cache
+/home/ukasz/aspStuff/testNLog/obj/Debug/netcoreapp2.1/testNLog.RazorAssemblyInfo.cs
+/home/ukasz/aspStuff/testNLog/obj/Debug/netcoreapp2.1/testNLog.AssemblyInfoInputs.cache
+/home/ukasz/aspStuff/testNLog/obj/Debug/netcoreapp2.1/testNLog.AssemblyInfo.cs
