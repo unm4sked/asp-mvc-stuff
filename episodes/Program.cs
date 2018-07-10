@@ -7,14 +7,7 @@ namespace episodes
     {
         static void Main(string[] args)
         {
-            // var fun = new Delegates();   
-            // fun.Test();    
-
-            // var fun = new LambdaExpressions();
-            // fun.Test(); 
-
-            var fun = new EventsSandbox();
-            fun.Test();
+            
         }
     }
 }

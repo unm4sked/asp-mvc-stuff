@@ -9,3 +9,14 @@
 /home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.AssemblyInfo.cs
 /home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.dll
 /home/ukasz/episodes/obj/Debug/netcoreapp2.1/episodes.pdb
+/home/ukasz/aspStuff/episodes/bin/Debug/netcoreapp2.1/episodes.deps.json
+/home/ukasz/aspStuff/episodes/bin/Debug/netcoreapp2.1/episodes.runtimeconfig.json
+/home/ukasz/aspStuff/episodes/bin/Debug/netcoreapp2.1/episodes.runtimeconfig.dev.json
+/home/ukasz/aspStuff/episodes/bin/Debug/netcoreapp2.1/episodes.dll
+/home/ukasz/aspStuff/episodes/bin/Debug/netcoreapp2.1/episodes.pdb
+/home/ukasz/aspStuff/episodes/obj/Debug/netcoreapp2.1/episodes.csprojAssemblyReference.cache
+/home/ukasz/aspStuff/episodes/obj/Debug/netcoreapp2.1/episodes.csproj.CoreCompileInputs.cache
+/home/ukasz/aspStuff/episodes/obj/Debug/netcoreapp2.1/episodes.AssemblyInfoInputs.cache
+/home/ukasz/aspStuff/episodes/obj/Debug/netcoreapp2.1/episodes.AssemblyInfo.cs
+/home/ukasz/aspStuff/episodes/obj/Debug/netcoreapp2.1/episodes.dll
+/home/ukasz/aspStuff/episodes/obj/Debug/netcoreapp2.1/episodes.pdb

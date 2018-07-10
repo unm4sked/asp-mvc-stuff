@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ukasz/episodes/episodes.csproj",
+      "projectUniqueName": "/home/ukasz/aspStuff/episodes/episodes.csproj",
       "projectName": "episodes",
-      "projectPath": "/home/ukasz/episodes/episodes.csproj",
+      "projectPath": "/home/ukasz/aspStuff/episodes/episodes.csproj",
       "packagesPath": "/home/ukasz/.nuget/packages/",
-      "outputPath": "/home/ukasz/episodes/obj/",
+      "outputPath": "/home/ukasz/aspStuff/episodes/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
