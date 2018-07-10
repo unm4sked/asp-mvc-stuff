@@ -6,9 +6,11 @@ public class LoggerFileProvider : ILoggerProvider
 {
     private readonly string _logFilePath;
 
-    public LoggerFileProvider(string logFilePath)
+    public LoggerFileProvider()
     {
-        _logFilePath = logFilePath;
+        DateTime d = DateTime.UtcNow;
+        string tmp = d.ToString("o");
+        _logFilePath = "Logs/app1-"+tmp+".log";
     }
 
     public ILogger CreateLogger(string categoryName)

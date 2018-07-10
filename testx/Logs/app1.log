@@ -1,0 +1,69 @@
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET http://localhost:5000/   :: username :: 10.07.2018 21:10:32
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 27.0547ms 307  :: username :: 10.07.2018 21:10:32
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/   :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Route matched with {action = "Index", controller = "Home"}. Executing action testx.Controllers.HomeController.Index (testx) :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executing action method testx.Controllers.HomeController.Index (testx) - Validation state: Valid :: username :: 10.07.2018 21:10:33
+Debug :: App.Controllers.HomeController :: **********xxx********* :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executed action method testx.Controllers.HomeController.Index (testx), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.5618ms. :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor :: Executing ViewResult, running view Index. :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor :: Executed ViewResult - view Index executed in 215.3454ms. :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executed action testx.Controllers.HomeController.Index (testx) in 260.0748ms :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 450.2277ms 200 text/html; charset=utf-8 :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css   :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/css/site.css   :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/images/banner2.svg   :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/css/site.css'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/css/site.css' :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 13.7296ms 200 text/css :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/images/banner2.svg'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/images/banner2.svg' :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 25.6301ms 200 image/svg+xml :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/images/banner1.svg   :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/images/banner1.svg'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/images/banner1.svg' :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 1.3706ms 200 image/svg+xml :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/lib/bootstrap/dist/css/bootstrap.css' :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 120.014ms 200 text/css :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.js   :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/js/site.js'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/js/site.js' :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 0.7189ms 200 application/javascript :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/images/banner3.svg   :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/images/banner3.svg'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/images/banner3.svg' :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 0.6745ms 200 image/svg+xml :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/lib/bootstrap/dist/js/bootstrap.js' :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 18.7264ms 200 application/javascript :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/lib/jquery/dist/jquery.js' :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 25.9204ms 200 application/javascript :: username :: 10.07.2018 21:10:33
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   :: username :: 10.07.2018 21:10:34
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2' :: username :: 10.07.2018 21:10:34
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 0.6566ms 200 font/woff2 :: username :: 10.07.2018 21:10:34
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico   :: username :: 10.07.2018 21:10:34
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/favicon.ico'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/favicon.ico' :: username :: 10.07.2018 21:10:34
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 1.1659ms 200 image/x-icon :: username :: 10.07.2018 21:10:34
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/Home/Contact   :: username :: 10.07.2018 21:10:43
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Route matched with {action = "Contact", controller = "Home"}. Executing action testx.Controllers.HomeController.Contact (testx) :: username :: 10.07.2018 21:10:43
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executing action method testx.Controllers.HomeController.Contact (testx) - Validation state: Valid :: username :: 10.07.2018 21:10:43
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executed action method testx.Controllers.HomeController.Contact (testx), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.465ms. :: username :: 10.07.2018 21:10:43
+Information :: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor :: Executing ViewResult, running view Contact. :: username :: 10.07.2018 21:10:43
+Information :: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor :: Executed ViewResult - view Contact executed in 20.1488ms. :: username :: 10.07.2018 21:10:43
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executed action testx.Controllers.HomeController.Contact (testx) in 22.4726ms :: username :: 10.07.2018 21:10:43
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 26.2127ms 200 text/html; charset=utf-8 :: username :: 10.07.2018 21:10:43
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css   :: username :: 10.07.2018 21:10:44
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/css/site.css   :: username :: 10.07.2018 21:10:44
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/css/site.css'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/css/site.css' :: username :: 10.07.2018 21:10:44
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 2.0495ms 200 text/css :: username :: 10.07.2018 21:10:44
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/lib/bootstrap/dist/css/bootstrap.css' :: username :: 10.07.2018 21:10:44
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 5.0882ms 200 text/css :: username :: 10.07.2018 21:10:44
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/   :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Route matched with {action = "Index", controller = "Home"}. Executing action testx.Controllers.HomeController.Index (testx) :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executing action method testx.Controllers.HomeController.Index (testx) - Validation state: Valid :: username :: 10.07.2018 21:10:48
+Debug :: App.Controllers.HomeController :: **********xxx********* :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executed action method testx.Controllers.HomeController.Index (testx), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1222ms. :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor :: Executing ViewResult, running view Index. :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor :: Executed ViewResult - view Index executed in 1.2777ms. :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker :: Executed action testx.Controllers.HomeController.Index (testx) in 2.009ms :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 2.8958ms 200 text/html; charset=utf-8 :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css   :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/lib/bootstrap/dist/css/bootstrap.css' :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 1.4552ms 200 text/css :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request starting HTTP/1.1 GET https://localhost:5001/css/site.css   :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware :: Sending file. Request path: '/css/site.css'. Physical path: '/home/ukasz/aspStuff/testx/wwwroot/css/site.css' :: username :: 10.07.2018 21:10:48
+Information :: Microsoft.AspNetCore.Hosting.Internal.WebHost :: Request finished in 0.6251ms 200 text/css :: username :: 10.07.2018 21:10:48
