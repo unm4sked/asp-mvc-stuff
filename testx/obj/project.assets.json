@@ -11500,28 +11500,30 @@
     ]
   },
   "packageFolders": {
-    "/home/ukasz/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\lkalicki\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ukasz/aspStuff/testx/testx.csproj",
+      "projectUniqueName": "C:\\Users\\lkalicki\\Desktop\\aspStuff\\testx\\testx.csproj",
       "projectName": "testx",
-      "projectPath": "/home/ukasz/aspStuff/testx/testx.csproj",
-      "packagesPath": "/home/ukasz/.nuget/packages/",
-      "outputPath": "/home/ukasz/aspStuff/testx/obj/",
+      "projectPath": "C:\\Users\\lkalicki\\Desktop\\aspStuff\\testx\\testx.csproj",
+      "packagesPath": "C:\\Users\\lkalicki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lkalicki\\Desktop\\aspStuff\\testx\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/ukasz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\lkalicki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

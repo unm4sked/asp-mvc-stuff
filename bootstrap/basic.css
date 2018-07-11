@@ -1,0 +1,26 @@
+
+a {
+    display: block;
+}
+
+.container {
+    padding-top: 3em;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+.NameOfBlock {
+    padding-bottom:  1em;
+    font-size: 1.2em;
+    
+}
+.ImgBottomPadding {
+    padding-bottom: 1em;
+}
