@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ukasz/SportStore/SportStore.csproj",
+      "projectUniqueName": "/home/ukasz/aspStuff/SportStore/SportStore.csproj",
       "projectName": "SportStore",
-      "projectPath": "/home/ukasz/SportStore/SportStore.csproj",
+      "projectPath": "/home/ukasz/aspStuff/SportStore/SportStore.csproj",
       "packagesPath": "/home/ukasz/.nuget/packages/",
-      "outputPath": "/home/ukasz/SportStore/obj/",
+      "outputPath": "/home/ukasz/aspStuff/SportStore/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

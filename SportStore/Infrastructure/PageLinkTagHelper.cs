@@ -35,8 +35,13 @@ namespace SportStore.Infrastructure
         {
             IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
             TagBuilder result = new TagBuilder("div");
+            TagBuilder prev = new TagBuilder("a");
+            prev.Attributes["href"] = urlHelper.Action(PageAction, new {productPage = PageModel.CurrentPage <= 1? 1 :PageModel.CurrentPage-1});
+            prev.InnerHtml.Append("prev");
+            result.InnerHtml.AppendHtml(prev);
             for (int i = 1; i <= PageModel.TotalPages; i++)
             {
+                
                 TagBuilder tag = new TagBuilder("a");
                 tag.Attributes["href"] = urlHelper.Action(PageAction,
                    new { productPage = i });
@@ -49,6 +54,11 @@ namespace SportStore.Infrastructure
                 tag.InnerHtml.Append(i.ToString());
                 result.InnerHtml.AppendHtml(tag);
             }
+            TagBuilder next = new TagBuilder("a");
+            next.Attributes["href"] = urlHelper.Action(PageAction, new {productPage = PageModel.CurrentPage >= PageModel.TotalPages ? PageModel.TotalPages : PageModel.CurrentPage+1 });
+            next.InnerHtml.Append("next");
+            result.InnerHtml.AppendHtml(next);
+            
             output.Content.AppendHtml(result.InnerHtml);
         }
     }
