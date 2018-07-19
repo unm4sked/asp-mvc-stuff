@@ -1,0 +1,8 @@
+﻿@model IEnumerable<B.HardwareTown.ApplicationCore.Models.Category>
+
+@foreach (var category in Model)
+{
+<div class="list-group-item">
+	<a href="#" class="not-active"><span class="font14">@category.CategoryName</span></a>
+</div>
+}

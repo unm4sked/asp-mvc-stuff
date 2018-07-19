@@ -1,0 +1,192 @@
+
+.container {
+    max-width: 1024;
+}
+
+.SeeMore {
+    margin-top: 0px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.KategoriaItem {
+    margin-bottom: 0px;
+    color: grey;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.Nazwa {
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.Cena {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.BiggerFont {
+    font-size: 20px;
+}
+
+.list-group-item {
+    font-size: 10px;
+    padding: 12px
+}
+
+a {
+    display: block;
+}
+
+.not-active {
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.Tittle1 {
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+.img1 {
+    display: block;
+    margin: auto;
+    background-size: 100%;
+    background-size: cover;
+}
+
+.margin1 {
+    margin-top: 15px;
+}
+
+.dolar {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.inner {
+    display: table;
+    margin: 0 auto;
+}
+
+.img-margin {
+    margin-right: 10px;
+}
+
+.DescItemShopp {
+    font-style: normal;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.OthItemShop {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.DeliverDate {
+    color: rgb(137, 182, 69);
+}
+
+.size-Money {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.size-Money2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+}
+
+.size-Money3 {
+    font-size: 15px;
+    font-weight: 900;
+    color: rgb(82, 82, 82);
+}
+
+.unablelink {
+    color: black;
+    Text-Decoration: None !important;
+}
+
+.hov {
+    color: rgb(82, 82, 82);
+}
+
+    .hov:hover {
+        color: rgb(224, 0, 0);
+    }
+
+.padding0 {
+    padding-left: 0%;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.b1 {
+    padding-right: 13px;
+    margin-bottom: 20px;
+}
+
+.b2 {
+    padding-left: 7px;
+    padding-right: 21px;
+    margin-bottom: 20px;
+}
+
+.b3 {
+    padding-right: 7px;
+    padding-left: 21px;
+    margin-bottom: 20px;
+}
+
+.b4 {
+    padding-left: 13px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .b1 {
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .b2 {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .b3 {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .b4 {
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.img2 {
+    width: 100%;
+}
+
+.img3 {
+    padding-left: 0px;
+}
+
+@media (max-width: 767px) {
+    .img3 {
+        padding-left: 15px;
+    }
+}
