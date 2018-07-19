@@ -1,0 +1,12 @@
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\bin\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.deps.json
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\bin\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.dll
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\bin\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.pdb
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\bin\Debug\netcoreapp2.1\B.HardwareTown.ApplicationCore.dll
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\bin\Debug\netcoreapp2.1\B.HardwareTown.ApplicationCore.pdb
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\obj\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\obj\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\obj\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\obj\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.AssemblyInfo.cs
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\obj\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.csproj.CopyComplete
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\obj\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.dll
+C:\Users\Lukasz\Desktop\Hardware-Town\src\B.HardwareTown.Infrastructure\obj\Debug\netcoreapp2.1\B.HardwareTown.Infrastructure.pdb

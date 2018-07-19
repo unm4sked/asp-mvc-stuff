@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="alert alert-success alert-dismissible fade show" style="margin-bottom: 35px;" role="alert">
+    You have added product <strong>[Product name]</strong> To your cart.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col" style="border: none;"><span class="DescItemShopp">Your Cart</span></th>
+            <th scope="col" style="border: none;"><span class="OthItemShop">Estimated Delivery</span></th>
+            <th scope="col" style="border: none;"><span class="OthItemShop">Count</span></th>
+            <th scope="col" style="border: none;"><span class="OthItemShop">Price</span></th>
+            <th scope="col" style="border: none;"><span class="OthItemShop"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">
+                <div style="margin-left: 0px">
+                    <img src="~/images/cpu.png" alt="cpu" class="img1 img-fluid img-margin" height="80" width="80" align="left">
+                </div>
+                <div class="inner ">
+                    <a href="#" class="unablelink">
+                        <p>Product full name Product full name Product full name Product full name</p>
+                    </a>
+                </div>
+            </th>
+            <td><span class="DeliverDate">Wednesday, 25 August 2025</span></td>
+            <td><input type="number" min="0" max="99" size="1" placeholder="1" class="form-control"></td>
+            <td><span class="dolar size-Money">$</span><span class="size-Money">680</span><span class="size-Money2">.00</span></td>
+            <td><a href="#"> <p><i class="far fa-2x fa-trash-alt hov"></i></p> </a></td>
+        </tr>
+
+    </tbody>
+</table>
+<hr>
+
+<div class="row">
+    <div class="col" style="text-align: right">
+        <span class="size-Money3">Cart value:</span> <span class="dolar size-Money">$</span><span class="size-Money">680</span><span class="size-Money2">.00</span>
+    </div>
+</div>
+<div class="row margin1">
+    <div class="col" style="text-align: left">
+        <form asp-action="Index" asp-controller="Home">
+            <button type="submit" class="btn btn-light border"> <i class="fas fa-chevron-left"></i><span style="font-size: 18px">Continue shopping</span> </button>
+        </form>
+    </div>
+    <div class="col" style="text-align: right">
+        <button type="button" class="btn btn-primary btn-lg" formaction="#">Checkout <i class="fas fa-chevron-right"></i></button>
+
+    </div>
+</div>

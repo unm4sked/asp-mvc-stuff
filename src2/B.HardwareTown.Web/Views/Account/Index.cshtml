@@ -1,0 +1,26 @@
+﻿@model IEnumerable<B.HardwareTown.ApplicationCore.Models.Customer>
+@{
+	ViewData["Title"] = "Index";
+}
+<form asp-controller="Account" asp-action="Index" method="get">
+	<br />
+	<h2>Customers</h2>
+	<div class="form-border">
+		<table class="table table-condensed table-hover">
+			<tr>
+				<th>
+					@Html.DisplayNameFor(m => m.Email)
+				</th>
+			</tr>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(m => item.Email)
+					</td>
+				</tr>
+			}
+		</table>
+	</div>
+</form>
+

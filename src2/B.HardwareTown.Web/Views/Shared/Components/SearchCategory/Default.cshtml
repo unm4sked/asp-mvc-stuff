@@ -1,0 +1,6 @@
+﻿@model IEnumerable<B.HardwareTown.ApplicationCore.DTO.CategoryFoundDTO>
+
+@foreach (var category in Model)
+{
+	<li><a href="">@category.CategoryName (@category.Count)</a></li>
+}

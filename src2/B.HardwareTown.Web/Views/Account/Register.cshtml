@@ -1,0 +1,82 @@
+﻿@model  B.HardwareTown.Web.ViewModels.RegisterViewModel
+@{
+	ViewData["Title"] = "Register";
+}
+<br />
+<div class="row">
+	<div class="col-lg-4 col-md-5 col-sm-12">
+		<section>
+			<h1>Register</h1>
+			<br />
+			<form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+				<div asp-validation-summary="All" class="text-danger"></div>
+				<div class="form-group">
+					<label asp-for="Email">Email address</label>
+					<input asp-for="Email" class="form-control" placeholder="Email"/>
+					<span asp-validation-for="Email" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Password" class="custom-label"></label>
+					<input asp-for="Password" class="form-control" placeholder="Password"/>
+					<span asp-validation-for="Password" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="ConfirmPassword" class="custom-label"></label>
+					<input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password"/>
+					<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+				</div>
+				<div class="form-group row">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-1">
+								<input asp-for="Privacy" class="justify-content-center" type="checkbox" />
+							</div>
+							<div style="display:inline;" class="col-11">
+								<label asp-for="Privacy">I have read the Hardware Town's<a style="display:inline-block;" href="#">Privacy Notice</a> and the <a style="display:inline-block" href="#">Terms of Service</a><span style="color:red;"> *</span></label>
+								<span asp-validation-for="Privacy" class="text-danger"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="row">
+							<div class="col-1">
+								<input asp-for="Promo" class="justify-content-center" type="checkbox" />
+							</div>
+							<div class="col-11">
+								<label asp-for="Promo">I freely agree that you can send promotional offers and other spam to my email address<span style="color:red;"> *</span></label>
+								<span asp-validation-for="Promo" class="text-danger"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="align-content-end">
+						<button type="submit" class="btn btn-primary">Sign in</button>
+					</div>
+				</div>
+			</form>
+		</section>
+	</div>
+	<div class="col-lg-2 col-md-1 col-sm-0">
+
+	</div>
+	<div class="col-lg-4 col-md-5 col-sm-12">
+		<section>
+			<h1>Log in</h1>
+			<br />
+			<div class="form-group">
+				<p>Already have account?</p>
+			</div>
+			<div class="form-group">
+				<a asp-controller="Account" asp-action="Login"  class="btn btn-primary">Log in</a>
+			</div>
+		</section>
+	</div>
+	<div class="col-lg-2 col-md-1 col-sm-0">
+
+	</div>
+</div>
+
+
+
+

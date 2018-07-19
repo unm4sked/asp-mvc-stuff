@@ -1,0 +1,30 @@
+﻿@model B.HardwareTown.Web.ViewModels.PagingInfo
+@{
+	ViewData["Title"] = "Search";
+}
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item active" aria-current="page"><a asp-controller="Home" asp-action="Index">Hardware Town </a></li>
+		<li class="breadcrumb-item active" aria-current="page">All Categories</li>
+	</ol>
+</nav>
+<div class="search">
+	<div class="row">
+		<div class="col-lg-2 col-md-4 col-sm-12">
+			<p style="font-weight:600">Categories</p>
+			<ul class="nav flex-column">
+				@await Component.InvokeAsync("SearchCategory", new { search = Model.Search })
+			</ul>
+		</div>
+		<div class="col-lg-10 col-md-8 col-sm-12 desc">
+			<div style="margin-left: 1em;">
+
+				<div class="text-search">
+                    <p style="font-weight:600; font-size:110%;"> You are searching for "@Model.Search"</p>
+				</div>
+				
+					@await Component.InvokeAsync("ProductItem",new { search = Model.Search, productPage = Model.CurrentPage, PageSize = Model.ItemsPerPage })
+			</div>
+		</div>
+	</div>
+</div>

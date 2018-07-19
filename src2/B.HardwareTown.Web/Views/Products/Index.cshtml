@@ -1,0 +1,35 @@
+﻿@model IEnumerable<B.HardwareTown.ApplicationCore.DTO.ProductDTO>
+
+<div class="search">
+    <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-12">
+            <ul class="nav flex-column">
+                <li><p style="font-weight:600">Categories</p></li>
+                <li><a href="">CPU</a></li>
+                <li><a href="">Prebuild computer</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-10 col-md-8 col-sm-12 desc">
+			<div style="margin-left: 1em;">
+
+				<div class="text-search">
+					<p style="font-weight:600; font-size:110%;"> You are searching for </p>
+				</div>
+				<div>
+					<form>
+						<select style="margin-bottom: 1em;" class="custom-select col-2">
+							<option value="">Option</option>
+							<option value="">Another Option</option>
+							<option value="">Sometching else</option>
+						</select>
+						<select style="margin-bottom: 1em;" class="custom-select col-1">
+							<option value="20">20</option>
+							<option value="50">50</option>
+						</select>
+					</form>
+				</div>
+				@await Component.InvokeAsync("ProductItem")
+			</div>
+        </div>
+    </div>
+</div>
