@@ -1,0 +1,21 @@
+﻿@model B.HardwareTown.ApplicationCore.DTO.ProductDTO
+
+@using B.HardwareTown.ApplicationCore.Services
+@using Microsoft.AspNetCore.Identity
+@using B.HardwareTown.ApplicationCore.Models
+
+@inject ILikesService LikesService
+@inject UserManager<Customer> UserManager
+
+@if (!LikesService.CheckUserId(Model, UserManager.GetUserId(User)))
+{
+	<form asp-action="Like" asp-controller="Details" asp-route-id="@Model.Id" method="post">
+		<button class="btn btn-primary pb-0 pt-0" type="submit">Like <i class="far fa-thumbs-up"></i></button>
+	</form>
+}
+else
+{
+<form asp-action="UnLike" asp-controller="Details" asp-route-id="@Model.Id" method="post">
+	<button class="btn btn-primary pb-0 pt-0" type="submit">Unlike</button>
+</form>
+}

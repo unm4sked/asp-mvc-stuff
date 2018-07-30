@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model B.HardwareTown.Web.ViewModels.CartIndexViewModel
+
+@if (Model.Cart.Lines.Count() > 1)
+{ 
+    <div class="alert alert-success alert-dismissible fade show text-center" style="margin-bottom: 35px;" role="alert">
+        You have added product <strong>@Model.Cart.Lines.LastOrDefault().Product.Name</strong> To your cart.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col" style="border: none;"><span class="DescItemShopp">Your Cart</span></th>
+            <th scope="col" style="border: none;"><span class="OthItemShop">Estimated Delivery</span></th>
+            <th scope="col" style="border: none;"><span class="OthItemShop">Count</span></th>
+            <th scope="col" style="border: none;"><span class="OthItemShop">Price</span></th>
+            <th scope="col" style="border: none;"><span class="OthItemShop"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var line in Model.Cart.Lines)
+        {
+
+            <tr>
+                <th scope="row">
+                    <div style="margin-left: 0px">
+                        <img src="~/images/cpu.png" alt="cpu" class="img1 img-fluid img-margin" height="80" width="80" align="left">
+                    </div>
+                    <div class="inner ">
+                        <a href="#" class="unablelink">
+                            <p>@line.Product.Name</p>
+                        </a>
+                    </div>
+                </th>
+                <td><span class="DeliverDate">Wednesday, 25 August 2025</span></td>
+                <td><input type="number" min="1" max="99" size="1" placeholder="@line.Quantity" class="form-control"></td>
+                @{
+                    int price_part1 = (int)decimal.Truncate(line.Product.Price);
+                    int price_part2 = (int)(line.Product.Price * 100) % 100;
+                }
+                <td><span class="dolar size-Money">$</span><span class="size-Money">@price_part1</span><span class="size-Money2">.@price_part2</span></td>
+                <td>
+                    <form asp-action="RemoveFromCart" method="post">
+                        <input type="hidden" name="productId" value="@line.Product.Id" />
+                        <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                        <button type="submit" class="buttonLikeLink"> <p><i class="far fa-2x fa-trash-alt hov"></i></p></button>
+
+                    </form>
+                </td>
+            </tr>
+
+
+        }
+    </tbody>
+</table>
+<hr>
+
+<div class="row">
+    <div class="col" style="text-align: right">
+        @{
+            int total_price_part1 = (int)decimal.Truncate(Model.Cart.ComputeTotalValue());
+            int total_price_part2 = (int)(Model.Cart.ComputeTotalValue() * 100) % 100;
+        }
+        <span class="size-Money3">Cart value:</span> <span class="dolar size-Money">$</span><span class="size-Money">@total_price_part1</span><span class="size-Money2">.@total_price_part2</span>
+    </div>
+</div>
+<div class="row margin1">
+    <div class="col" style="text-align: left">
+
+        <a href="@Model.ReturnUrl" class="btn btn-light border"> <i class="fas fa-chevron-left"></i><span style="font-size: 18px">Continue shopping</span> </a>
+
+    </div>
+    <div class="col" style="text-align: right">
+        <button type="button" class="btn btn-primary btn-lg" formaction="#">Checkout <i class="fas fa-chevron-right"></i></button>
+
+    </div>
+</div>
+<hr />

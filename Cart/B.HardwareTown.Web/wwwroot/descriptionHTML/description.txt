@@ -1,0 +1,7 @@
+<div style= "text-align:center">
+	<h1>THE AMAZING PROCESOR</h1>
+	<p>this procesor is good.Please buy.</p>
+	<h4>Totally unbiased benchmarks*:</h4>
+	<span>Our processor: 1000FPS in games</span>
+	<span>Competiton processor: 15FPS in games</span>
+</div>

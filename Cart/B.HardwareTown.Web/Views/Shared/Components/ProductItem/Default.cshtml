@@ -1,0 +1,48 @@
+﻿@using B.HardwareTown.Infrastructure.Extensions
+@model B.HardwareTown.Web.ViewModels.ProductsPagingViewModel
+
+<ul class="list-group-flush">
+    @foreach (var product in Model.Products)
+    {
+        <li class="list-group-item ml-0 pl-0">
+            <div class="row" style="padding-bottom: 1em; padding-top: 1em;">
+                <div class="col-lg-3 col-md-4 col-sm-12 pl-0">
+                    <img src="~/images/cpu.png" style="padding-bottom:0.5em;" />
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-12 pl-0">
+                    <a href="@Url.Action("Index","Details",new {id = product.Id })"><p class="h5">@product.Name</p></a>
+                    <ul>
+                        @foreach (var detail in product.Details)
+                        {
+                            <li style="font-weight:200; font-size:medium;">@detail</li>
+                        }
+                    </ul>
+                    <p style="font-weight:600; font-size:medium;">Bought @product.Bought times</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12" style="text-align:right; display:inline;">
+                    <div>
+                        <h3 align="right" style="font-weight:700; display:inline-block; color:greenyellow;">$</h3>
+                        <h3 align="right" style="font-weight:700; display:inline-block;">@product.Price</h3>
+                        <h3 align="right" style="font-weight:700; color:grey; display:inline-block;">.@String.Format("{0:00}", (product.Price % 1 * 100))</h3>
+                        <form id="@product.Id" asp-action="AddToCart" asp-controller="Cart" method="post">
+                            @{ 
+                                Guid ProductId = product.Id;
+                            }
+                            <input type="hidden" asp-for="@ProductId"/>
+                            <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()"/>
+                            <button type="submit" class="btn btn-danger btn-lg">Add to Cart</button>
+                        </form>
+                        <p style="color:red; margin-top:1em;  font-size:medium;">Available</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    }
+
+</ul>
+
+<center>
+    <div page-model="@Model" page-classes-enabled="true"
+         page-class="btn border" page-class-normal="btn-basic"
+         page-class-selected="btn-primary" class="btn-group pull-right m-1"></div>
+</center>

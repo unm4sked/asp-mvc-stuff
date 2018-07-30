@@ -1,0 +1,8 @@
+﻿@model IEnumerable<B.HardwareTown.ApplicationCore.Models.Category>
+
+@foreach (var category in Model)
+{
+<div class="list-group-item">
+	<a href="@Url.Action("Index","Search",new {categoryname = category.CategoryName })"><span class="font14">@category.CategoryName</span></a>
+</div>
+}

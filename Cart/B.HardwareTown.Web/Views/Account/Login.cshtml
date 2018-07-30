@@ -1,0 +1,79 @@
+﻿@using B.HardwareTown.ApplicationCore.Models
+@using Microsoft.AspNetCore.Identity
+@model B.HardwareTown.Web.ViewModels.LoginViewModel
+@inject SignInManager<Customer> SignInManager
+@{
+	ViewData["Title"] = "Log in";
+}
+<br />
+<div class="row">
+	<div class="col-lg-4 col-md-5 col-sm-12">
+		<section>
+			<h1>Log in</h1>
+			<br />
+			<form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+				<div asp-validation-summary="All" class="text-danger"></div>
+				<div class="form-group">
+					<label asp-for="Email"></label>
+					<input asp-for="Email" class="form-control" placeholder="Email" required />
+					<span asp-validation-for="Email" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Password">Password</label>
+					<input asp-for="Password" class="form-control" placeholder="Password" required />
+					<span asp-validation-for="Password" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<div class="">
+						<p>
+							<a asp-action="ForgotPassword">I forgot my password</a>
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-lg-3"><button type="submit" class="btn btn-primary">Log in</button></div>
+						<div class="checkbox col-lg-9">
+							<label asp-for="RememberMe">
+								<input asp-for="RememberMe" />
+								@Html.DisplayNameFor(m => m.RememberMe)
+							</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+	</div>
+	<div class="col-lg-2 col-md-1 col-sm-0">
+
+	</div>
+	<div class="col-lg-5 col-md-5 col-sm-12">
+		<section>
+			<h1>Register</h1>
+			<br />
+			<div class="form-group">
+				<p>In order to shop on this website, you must register.</p>
+			</div>
+			<div class="form-group" style="line-height: 135%;">
+				<p class="mb-0 pb-0 mt-0 pt-0">Registering allows you to:</p>
+				<ol class="m-0 p-0" style="list-style-type:none">
+					<li class="m-0 p-0"><p class="m-0 p-0">-Define your personal info and delivery address</p></li>
+					<li class="mb-0 pb-0 mt-0 pt-0"><p class="mb-0 pb-0 mt-0 pt-0">-Finalize orders</p></li>
+					<li class="mb-0 pb-0 mt-0 pt-0"><p class="mb-0 pb-0 mt-0 pt-0">-Use acquired coupons</p></li>
+					<li class="mb-0 pb-0 mt-0 pt-0"><p class="mb-0 pb-0 mt-0 pt-0">-and many more!</p></li>
+				</ol>
+			</div>
+			<div class="form-group">
+				<a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" class="btn btn-primary">Sign in</a>
+			</div>
+		</section>
+	</div>
+	<div class="col-lg-2 col-md-1 col-sm-0">
+
+	</div>
+</div>
+
+@*@section Scripts {
+	@await Html.PartialAsync("_ValidationScriptsPartial")
+}*@
+
+
+

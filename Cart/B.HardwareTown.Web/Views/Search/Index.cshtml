@@ -1,0 +1,84 @@
+﻿@model B.HardwareTown.Web.ViewModels.ProductsPagingViewModel
+@{
+	ViewData["Title"] = "Search";
+}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page"><a asp-controller="Home" asp-action="Index">Hardware Town </a></li>
+        @if (!String.IsNullOrEmpty(Model.PagingInfo.CategoryName))
+        {
+            <li class="breadcrumb-item active" aria-current="page">@Model.PagingInfo.CategoryName</li>
+        }
+        else //(String.IsNullOrEmpty(Model.PagingInfo.CategoryName))
+        {
+            <li class="breadcrumb-item active" aria-current="page">All Categories</li>
+        }
+    </ol>
+</nav>
+<div class="search">
+	<div class="row">
+		<div class="col-lg-2 col-md-4 col-sm-12">
+			<p style="font-weight:600">Categories</p>
+			<ul class="nav flex-column">
+				@await Component.InvokeAsync("SearchCategory", new { search = Model.PagingInfo.Search, products = Model.Products })
+			</ul>
+		</div>
+		<div class="col-lg-10 col-md-8 col-sm-12 desc">
+			<div style="margin-left: 1em;">
+
+                <div class="text-search">
+                    @if (!String.IsNullOrEmpty(Model.PagingInfo.Search))
+                    {
+                        <p style="font-weight:600; font-size:110%;"> You are searching for "@Model.PagingInfo.Search"</p>
+                    }
+                </div>
+                <div>
+                    <form asp-controller="Search" asp-action="Index" method="get">
+                        <select style="margin-bottom: 1em;" class="custom-select col-2" name="orderBy" id="orderBy" onchange="submit()">
+                            @*
+                HP - Highest Price
+                LP - Lowest Price
+                            *@
+                            @if (Model.PagingInfo.OrderBy == "LP")
+                            {
+                                <option value="LP">Lowest price</option>
+                                <option value="HP">Highest price</option>
+                            }
+                            @if (Model.PagingInfo.OrderBy == "HP")
+                            {
+                                <option value="HP">Highest price</option>
+                                <option value="LP">Lowest price</option>
+                            }
+                        </select>
+                        <select style="margin-bottom: 1em;" class="custom-select col-1" name="PageSize" id="PageSize" onchange="submit()">
+                            @if (@Model.PagingInfo.ItemsPerPage != 20)
+                            {
+                                <option> @Model.PagingInfo.ItemsPerPage</option>
+                            }
+
+                            <option value="20">20</option>
+                            @if (@Model.PagingInfo.ItemsPerPage != 50)
+                            {
+                                <option value="50">50</option>
+                            }
+                            @if (Model.PagingInfo.Search != "")
+                            {
+                                <input hidden id="search" name="search" value="@Model.PagingInfo.Search" />
+
+                            }
+                            @if (Model.PagingInfo.CategoryName != "")
+                            {
+                                <input hidden id="categoryname" name="categoryname" value="@Model.PagingInfo.CategoryName" />
+
+
+                            }
+
+                        </select>
+
+                    </form>
+                </div>
+					@await Component.InvokeAsync("ProductItem",new { search = Model.PagingInfo.Search, productPage = Model.PagingInfo.CurrentPage, PageSize = Model.PagingInfo.ItemsPerPage, productsFromCategories = Model.Products, categoryname = Model.PagingInfo.CategoryName, orderBy = Model.PagingInfo.OrderBy })
+			</div>
+		</div>
+	</div>
+</div>
